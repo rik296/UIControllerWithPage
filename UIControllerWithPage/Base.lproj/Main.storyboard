@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WZ-Y2-TEp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="cze-xz-4uS">
+                                <rect key="frame" x="140" y="507" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="9ac-WL-7WV"/>
+                                    <constraint firstAttribute="height" constant="37" id="oNY-CK-3LF"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cze-xz-4uS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8US-Fq-UYZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0WZ-Y2-TEp" secondAttribute="trailing" constant="-16" id="E4s-4w-Wub"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cze-xz-4uS" secondAttribute="bottom" constant="24" id="F6j-JU-Sbf"/>
+                            <constraint firstItem="0WZ-Y2-TEp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ROe-dU-pb1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0WZ-Y2-TEp" secondAttribute="bottom" id="mdK-uj-AW5"/>
+                            <constraint firstItem="0WZ-Y2-TEp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="x7Z-Re-kdt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="m_pageControl" destination="cze-xz-4uS" id="qVy-fv-he1"/>
+                        <outlet property="m_scrollView" destination="0WZ-Y2-TEp" id="b8K-e0-Tkm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258.66666666666669" y="399.49333333333334"/>
+        </scene>
+    </scenes>
+</document>
